@@ -10,10 +10,6 @@ print(weather.get('sunny', "The weather is sunny"))
 print(weather.get('windy', "No other action"))
 print(weather.get('neutral', "The weather is not sunny or windy"))
 
-
-# In[46]:
-
-
 time_of_day = {
             'day': 'wait',
             'night': 'take cows to cowshed',
@@ -22,21 +18,10 @@ time_of_day = {
 print(time_of_day.get('night', "The cows are on the pasture at night"))
 print(time_of_day.get('day', "No other action"))
 
-
-# In[14]:
-
-
-
-
 cow_milking_status = 'Need milking' if True else 'Don\'t need milking'
 slurry_tank = 'Full' if True else 'Not full'
 grass_status = 'Long' if True else 'Short'
     
-
-
-# In[15]:
-
-
 location_of_the_cows = {
                      'pasture': 'take cows to cowshed',
                      'cowshed': 'milk cows',
@@ -44,10 +29,6 @@ location_of_the_cows = {
 
 print(location_of_the_cows.get('pasture', "the cows are on the pasture at night"))
 print(location_of_the_cows.get('cowshed', "the cows are in the cowshed"))
-
-
-# In[16]:
-
 
 season = {
         'winter': 'wait',
@@ -61,17 +42,12 @@ print(season.get('spring', "The grass is long"))
 print(season.get('summer', "No other action"))
 print(season.get('fall', "No other action"))
 
-
-# In[9]:
-
-
 weather = {
         'rainy': 'take cows to cowshed',
         'sunny': 'take cows to cowshed\nmow grass',
         'windy': 'wait',
         'neutral': 'fertilize pasture'
     }
-
 
 time_of_day = {
             'day': 'wait',
@@ -95,10 +71,6 @@ season = {
 
 slurry_tank = 'Full' if True else 'Not full'
 grass_status = 'Long' if True else 'Short'
-
-
-
-
 
 def farm_action(weather, time_of_day, cow_milking_status, location_of_the_cows, season, slurry_tank, grass_status):
     if weather == "rainy" and time_of_day == "night" and location_of_the_cows == "pasture":
@@ -114,7 +86,4 @@ def farm_action(weather, time_of_day, cow_milking_status, location_of_the_cows, 
         
         
 farm_action('sunny', 'day', True, 'pasture', 'spring', False, True)
-
-
-
 
